@@ -43,7 +43,7 @@ function App() {
   };
 
   const fetchAirQualityData = (lat, lon) => {
-    const API_KEY = "c9d30ef9db37ea2008863f188c77dc83";
+    const API_KEY = import.meta.env.VITE_API_KEY;
     axios
       .get(
         `https://api.openweathermap.org/data/2.5/air_pollution?lat=${lat}&lon=${lon}&appid=${API_KEY}`
@@ -55,7 +55,7 @@ function App() {
   };
 
   const fetchFiveDayForecast = ({ city, latitude, longitude }) => {
-    const API_KEY = "c9d30ef9db37ea2008863f188c77dc83";
+    const API_KEY = import.meta.env.VITE_API_KEY;
     let url;
 
     if (latitude && longitude) {
