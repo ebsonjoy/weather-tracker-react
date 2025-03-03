@@ -1,9 +1,9 @@
 import { useEffect, useState } from "react";
 import "./App.css";
-import NavBar from "./components/NavBar";
-import MainWeather from "./components/MainWeather";
-import TodayHighlights from "./components/TodayHighlights";
-import FiveDayForecast from "./components/FiveDayForecast";
+import NavBar from "./components/NavBar.jsx";
+import MainWeather from "./components/Mainweather.jsx";
+import TodayHighlights from "./components/TodayHighlights.jsx";
+import FiveDayForecast from "./components/FiveDayForecast.jsx";
 import axios from "axios";
 
 function App() {
