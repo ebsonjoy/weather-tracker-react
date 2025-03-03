@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
+  <!-- Background Circle -->
+  <circle cx="100" cy="100" r="90" fill="url(#bgGradient)" />
+  
+  <!-- Sun -->
+  <circle cx="65" cy="80" r="25" fill="#FFD700" filter="drop-shadow(0 0 10px rgba(255,215,0,0.7))" />
+  
+  <!-- Rays -->
+  <g stroke="#FFD700" stroke-width="4" stroke-linecap="round">
+    <line x1="65" y1="45" x2="65" y2="35" />
+    <line x1="65" y1="125" x2="65" y2="115" />
+    <line x1="30" y1="80" x2="20" y2="80" />
+    <line x1="110" y1="80" x2="100" y2="80" />
+    <line x1="40" y1="55" x2="32" y2="47" />
+    <line x1="98" y1="113" x2="90" y2="105" />
+    <line x1="40" y1="105" x2="32" y2="113" />
+    <line x1="98" y1="47" x2="90" y2="55" />
+  </g>
+  
+  <!-- Cloud -->
+  <path d="M160 95 
+           C160 78 145 65 125 65
+           C115 65 105 70 100 78
+           C95 65 80 55 65 55
+           C45 55 30 70 30 90
+           C30 108 45 125 65 125
+           H150
+           C155 125 160 120 160 115
+           V95Z" 
+        fill="url(#cloudGradient)" 
+        filter="drop-shadow(0 4px 6px rgba(0,0,0,0.3))" />
+  
+  <!-- Rain Drops -->
+  <g fill="#64B5F6" filter="drop-shadow(0 2px 3px rgba(0,0,0,0.2))">
+    <path d="M90 140 C90 148 98 148 98 140 Q98 133 94 128 Q90 133 90 140Z" />
+    <path d="M110 130 C110 138 118 138 118 130 Q118 123 114 118 Q110 123 110 130Z" />
+    <path d="M130 140 C130 148 138 148 138 140 Q138 133 134 128 Q130 133 130 140Z" />
+  </g>
+  
+  <!-- Snowflake -->
+  <g stroke="#90CAF9" stroke-width="2" stroke-linecap="round" transform="translate(45, 135)">
+    <line x1="0" y1="0" x2="20" y2="20" />
+    <line x1="20" y1="0" x2="0" y2="20" />
+    <line x1="10" y1="0" x2="10" y2="20" />
+    <line x1="0" y1="10" x2="20" y2="10" />
+  </g>
+  
+  <!-- Gradients -->
+  <defs>
+    <linearGradient id="bgGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#2980B9" />
+      <stop offset="100%" stop-color="#6DD5FA" />
+    </linearGradient>
+    <linearGradient id="cloudGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFFFFF" />
+      <stop offset="100%" stop-color="#E0E0E0" />
+    </linearGradient>
+  </defs>
+</svg>
